@@ -20,6 +20,16 @@ Campi d'interesse:
   * Nome Completo
   * Genere
 
+Il codice completo del modulo è il seguente:
+
+```html
+<div class="module pg-header no-title" title="NOME-SFONDO">
+  <span class="sex"><p title="GENERE"></p></span>
+  <span class="avatar"><img style="top: 0px; left: 0px" src="URL-AVATAR"/></span>
+  <span class="name"><h1>NOME "SOPRANNOME" COGNOME</h1></span>
+</div>
+```
+
 ### Avatar
 
 L'avatar è l'immagine del prestavolto del PG. Le uniche limitazioni, oltre
