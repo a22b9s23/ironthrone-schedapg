@@ -102,6 +102,14 @@
   text-align: center;
 }
 
+.modifier-list .value:before {
+  content: var(--positive-mod-symbol);
+}
+
+.modifier-list .value {
+  color: var(--positive-mod-color);
+}
+
 .simple-ironbox .modifier-box .modifier-list dt {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -236,24 +244,24 @@
     padding: .2em;
     grid-gap: 0;
   }
-  
+
   .info-container .reduced-ironbox > .value > span {
     font-size: 1.5em;
     font-weight: bold;
     background-color: transparent;
   }
-  
+
   .info-container .reduced-ironbox > .modifier-list {
     border-top: 1px dashed var(--default-border-color);
   }
-  
+
   .info-container .reduced-ironbox.classes {
     grid-template-areas: "name" "modifier-list" !important;
     grid-template-columns: auto;
   }
-  
+
   .info-container .simple-ironbox .modifier-box .modifier-list {
     height: 60px; max-height: 60px;
   }
-  
+
 }

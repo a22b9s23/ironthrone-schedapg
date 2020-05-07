@@ -134,6 +134,7 @@
 
 .scheda-pg .inventory .box-item.tag-armor .dmg-reduction {
   grid-area: dmg-reduction;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -144,6 +145,7 @@
 
 .scheda-pg .inventory .box-item.tag-armor .test-penalty {
   grid-area: test-penalty;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -154,6 +156,7 @@
 
 .scheda-pg .inventory .box-item.tag-armor .hardness {
   grid-area: hardness;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -164,6 +167,7 @@
 
 .scheda-pg .inventory .box-item.tag-armor .wound-points {
   grid-area: wound-points;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -174,6 +178,7 @@
 
 .scheda-pg .inventory .box-item.tag-weapon .damage {
   grid-area: prop-2;
+  font-weight: bold;
   color: var(--main-text-color);
 }
 
@@ -194,6 +199,7 @@
 
 .scheda-pg .inventory .box-item.tag-shield .dmg-reduction {
   grid-area: dmg-reduction;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -204,6 +210,7 @@
 
 .scheda-pg .inventory .box-item.tag-shield .test-penalty {
   grid-area: test-penalty;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
@@ -214,6 +221,7 @@
 
 .scheda-pg .inventory .box-item.tag-shield .armor-bonus {
   grid-area: armor-bonus;
+  font-weight: bold;
   color: var(--main-text-color)
 }
 
