@@ -434,7 +434,7 @@ modulo è descritto all'interno del codice:
 <div class="module language-skill no-show" data-title="Languages">
   <div class="info-container">
     <dl clas="simple-container"><dt>Linguaggi Conosciuti</dt><dd>
-	  ..
+	     ...
 	  </dd></dl>
   </div>
 </div>
@@ -492,13 +492,13 @@ Il modulo è descritto dal codice:
 <div class="module inventory no-show" data-title="Equipaggiamento e Oggetti">
   <div class="info-container">
     <dl class="simple-container"><dt>Equipaggiamento</dt><dd>
-	  <div class="inventory-panel">
-	    ...
-	  </div>
-	  <div class="armor-panel">
-	    ...
-	  </div>
-	  </dd></dl>
+      <div class="inventory-panel">
+        ...
+      </div>
+      <div class="armor-panel">
+        ...
+      </div>
+    </dd></dl>
   </div>
 </div>
 ```
