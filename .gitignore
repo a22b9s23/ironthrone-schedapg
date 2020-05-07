@@ -6,3 +6,10 @@
 
 # Include README.md
 !README.md
+
+# Include source
+!src/
+
+# Include html and css
+!codice-scheda.html
+!styles.css
