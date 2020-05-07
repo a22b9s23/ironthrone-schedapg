@@ -1,0 +1,35 @@
+.iron-theme {
+  /* Main */
+  --background-contrast: #AAA;
+  --background-transparent-relevant: #000A;
+  --background-strong: #111;
+  --background-main: #222;
+  --background-level-2: #333;
+  --background-level-3: #444;
+
+  --main-text-color: #FFF;
+  --weak-text-color: #888;
+  --contrast-text-color: #000;
+
+  --shadow-color: #000;
+  --default-shadow: 0 0 5px var(--shadow-color);
+  --text-field-background: #222;
+  --text-field-color: #BBB;
+  --default-border-color: #FFF;
+  --border-contrast: #111;
+  --default-scrollbar-color: #111 transparent;
+
+  --divisor: 1px solid #222;
+
+  /* Modifier */
+  --positive-mod-color: green;
+  --negative-mod-color: red;
+  --positive-mod-symbol: '+';
+  --negative-mod-symbol: '-';
+
+  /* Sex */
+  --sex-symbol-none: '?';
+  --sex-symbol-male: '\2642';
+  --sex-symbol-female: '\2640';
+
+}

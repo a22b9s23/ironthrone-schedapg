@@ -1,0 +1,51 @@
+.scheda-pg .perks .info-container .simple-container > dd {
+  grid-template-columns: 33% 33% auto;
+  grid-gap: 2px;
+  max-height: 150px;
+}
+
+.scheda-pg .language-skill .info-container .simple-container > dd {
+  grid-template-columns: auto auto;
+  max-height: 150px;
+  grid-gap: 2px;
+  box-sizing: border-box;
+}
+
+.scheda-pg .language-skill .info-container .box-item {
+  grid-template-areas: "name name" "prop-1 prop-2";
+  grid-template-columns: 50% auto;
+  grid-template-rows: 30px 30px;
+}
+
+.scheda-pg .language-skill .info-container .box-item .name {
+  background-color: var(--background-strong);
+  place-self: stretch;
+}
+
+.scheda-pg .language-skill .info-container .box-item .name > span {
+  text-align: left;
+}
+
+.scheda-pg .language-skill .info-container .box-item .speak {
+  grid-area: prop-1;
+}
+
+.scheda-pg .language-skill .info-container .box-item .write {
+  grid-area: prop-2;
+}
+
+.scheda-pg .language-skill .info-container .box-item .speak:before {
+  content: 'Parlato';
+  font-style: italic;
+}
+
+.scheda-pg .language-skill .info-container .box-item .write:before {
+  content: 'Scritto';
+  font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  .scheda-pg .perks .info-container .simple-container > dd {
+    grid-template-columns: auto;
+  }
+}

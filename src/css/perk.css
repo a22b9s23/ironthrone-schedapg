@@ -1,0 +1,259 @@
+.simple-ironbox {
+  display: grid;
+  grid-template-areas:
+    "icon value"
+    "name value"
+    "modifier-box modifier-box";
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--background-level-2);
+  color: var(--main-text-color);
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.simple-ironbox .icon {
+  grid-area: icon;
+}
+
+.simple-ironbox > .name {
+  grid-area: name;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.simple-ironbox > .value {
+  grid-area: value;
+  place-self: center;
+}
+
+.simple-ironbox .value span {
+  display: inline-block;
+  background-color: var(--text-field-background);
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.simple-ironbox .modifier-box {
+  grid-area: modifier-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+.simple-ironbox .modifier-box .modifier {
+  align-self: center;
+}
+
+.simple-ironbox .modifier-box .modifier:before {
+  content: 'Mod:';
+  margin-right: 5px;
+}
+
+.simple-ironbox .modifier-box .modifier span {
+  background-color: var(--text-field-background);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.simple-ironbox .modifier-box .modifier-list {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-color: var(--background-main);
+  max-height: 50px;
+  height: 50px;
+}
+
+.simple-ironbox .modifier-box .modifier-list > div {
+  background-color: var(--background-main);
+  display: grid;
+  grid-template-areas: "value name";
+  margin: 0; padding: 0;
+  grid-template-columns: 30px auto;
+  /*! overflow: hidden; */
+}
+
+.simple-ironbox .modifier-box .modifier-list > div > .name {
+  grid-area: name;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding-left: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.simple-ironbox .modifier-box .modifier-list > div > .value {
+  grid-area: value;
+  background-color: var(--background-strong);
+  margin: 0; padding: 0;
+  justify-self: stretch;
+  text-align: center;
+}
+
+.simple-ironbox .modifier-box .modifier-list dt {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.simple-ironbox .modifier-box .modifier-list dt:after {
+  content: '';
+}
+
+.simple-ironbox .modifier-box .modifier-list dd {
+  display: inline-block;
+  justify-self: right;
+  margin: 0;
+  text-overflow: hidden;
+  color: var(--positive-mod-color);
+}
+
+.modifier-list .negative {
+  color: var(--negative-mod-color);
+}
+
+.modifier-list .negative:before {
+  content: var(--negative-mod-symbol);
+}
+
+.modifier-list dd:before {
+  content: var(--positive-mod-symbol);
+}
+
+@media screen and (max-width: 800px) {
+  .simple-ironbox {
+    grid-template-areas:
+      "icon" "name" "value" "modifier-box";
+    grid-template-columns: auto;
+  }
+
+  .simple-ironbox .icon {
+    display: none;
+  }
+
+  .simple-ironbox .name {
+    background-color: var(--text-field-background);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .simple-ironbox .value {
+    padding: 10px;
+  }
+
+  .simple-ironbox .value span {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .simple-ironbox .modifier-box {
+    grid-template-columns: auto;
+  }
+}
+
+/* Reduced Ironbox */
+.reduced-ironbox {
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "name modifier-list"
+    "value modifier-list";
+  grid-template-columns: 40% auto;
+  grid-gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.reduced-ironbox .name {
+  grid-area: name;
+  place-self: center;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.reduced-ironbox .value {
+  grid-area: value;
+  place-self: center;
+}
+
+.reduced-ironbox .value span {
+  background-color: var(--text-field-background);
+  padding: 7px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.reduced-ironbox .modifier-list {
+  grid-area: modifier-list;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 60px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  place-self: center;
+}
+
+.reduced-ironbox .modifier-list > div {
+  background-color: var(--background-main);
+  display: grid;
+  grid-template-areas: "value name";
+  margin: 0; padding: 0;
+  grid-template-columns: 30px auto;
+}
+
+.reduced-ironbox .modifier-list > div > .name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+.reduced-ironbox .modifier-list > div > .value {
+  background-color: var(--background-strong);
+  margin: 0; padding: 0;
+  justify-self: stretch;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .info-container .reduced-ironbox {
+    grid-template-areas: "name value" "modifier-list modifier-list";
+    grid-template-columns:50% auto;
+    padding: .2em;
+    grid-gap: 0;
+  }
+  
+  .info-container .reduced-ironbox > .value > span {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  
+  .info-container .reduced-ironbox > .modifier-list {
+    border-top: 1px dashed var(--default-border-color);
+  }
+  
+  .info-container .reduced-ironbox.classes {
+    grid-template-areas: "name" "modifier-list" !important;
+    grid-template-columns: auto;
+  }
+  
+  .info-container .simple-ironbox .modifier-box .modifier-list {
+    height: 60px; max-height: 60px;
+  }
+  
+}

@@ -1,0 +1,119 @@
+/* Scheda PG - v2020-04-09 */
+.scheda-pg {
+  background-color: var(--background-main);
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--main-text-color);
+}
+
+.scheda-pg p {
+  margin: 0; padding: 0;
+}
+
+.scheda-pg .module {
+  margin-bottom: 1em;
+  box-shadow: var(--default-shadow);
+  background-color: var(--background-level-2);
+  padding: 0;
+}
+
+.scheda-pg .module:last-of-type {
+  margin-bottom: 0;
+}
+
+.scheda-pg .module:before {
+  content: attr(title);
+  text-align: center;
+  display: block;
+  padding: .7em;
+  background-color: var(--background-level-3);
+  font-weight: bold;
+}
+
+.scheda-pg .no-show {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.scheda-pg .no-show:before {
+  content: none;
+}
+
+.scheda-pg .no-title:before {
+  content: none;
+}
+
+.scheda-pg .divisor {
+  display: block;
+  border-top: var(--divisor);
+  margin: 1em 0;
+}
+
+.scheda-pg div.button {
+  height: 30px;
+  display: grid;
+  background-color: var(--background-level-3);
+  grid-template-areas: "name value";
+  grid-template-columns: auto 30px;
+  place-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scheda-pg .no-value div.button, .scheda-pg div.button.no-value {
+  grid-template-areas: "name";
+  grid-template-columns: auto !important;
+}
+
+.scheda-pg div.button.no-value > .value {
+  display: none;
+}
+
+.scheda-pg .button .name {
+  border: 2px solid var(--background-strong);
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5px;
+  align-items: center;
+}
+
+.scheda-pg .button .name span {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.scheda-pg .button .value {
+  background-color: var(--background-strong);
+  width: 100%;
+  align-self: stretch;
+  display: grid;
+  place-items: center;
+}
+
+.scheda-pg .simple-container > dt {
+  text-align: center;
+  display: block;
+  padding: .7em;
+  font-weight: bold;
+  border-bottom: 1px solid var(--default-border-color);
+}
+
+@media screen and (max-width: 800px) {
+  .scheda-pg {
+    padding: 0;
+    box-shadow:empty;
+    border: 1px solid var(--border-contrast);
+  }
+
+  .scheda-pg .module {
+    padding: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,111 @@
+/* PG Header - Module - v2020-04-09 */
+.scheda-pg .pg-header {
+  padding: 2em !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.scheda-pg .pg-header .avatar {
+  display: block;
+  float: left;
+  width: 170px; min-width: 170px;
+  height: 170px; min-height: 170px;
+  overflow: hidden;
+  border-radius: 10% 10% 100% 100%;
+  box-shadow: 3px 3px 8px var(--shadow-color);
+}
+
+.scheda-pg .pg-header .avatar img {
+  width: 100%; height: 100%;
+}
+
+.scheda-pg .pg-header .sex {
+  width: 40px; line-height: 40px;
+  z-index: 2;
+  position: absolute;
+}
+
+.scheda-pg .pg-header .sex p {
+  background-color: var(--background-contrast);
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 145px; left: 155px;
+  box-shadow: 3px 3px 5px var(--shadow-color);
+  line-height: 40px;
+}
+
+.scheda-pg .pg-header .sex p:before {
+  display: inline-block;
+  text-align: center;
+  font-size: 27px;
+  color: var(--contrast-text-color);
+  width: 100%;
+  content: var(--sex-symbol-none);
+}
+
+.scheda-pg .pg-header .sex p[title="Maschio"]:before {
+  content: var(--sex-symbol-male);
+}
+
+.scheda-pg .pg-header .sex p[title="Femmina"]:before {
+  content: var(--sex-symbol-female);
+}
+
+.scheda-pg .pg-header span {
+  display: block;
+  text-align: right;
+}
+
+.scheda-pg .pg-header .name h1 {
+  text-shadow: 0 0 2px var(--shadow-color);
+  border-right: 3px solid var(--default-border-color);
+  padding: .2em 1em;
+  background-color: var(--background-transparent-relevant);
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Adattamento codice scheda per dispositivi mobili */
+@media screen and (max-width: 800px) {
+  .scheda-pg .pg-header {
+    padding: 1em;
+    height: auto;
+  }
+
+  .scheda-pg .pg-header .avatar {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .scheda-pg .pg-header .sex p {
+    top: unset; left: unset;
+  }
+
+  .scheda-pg .pg-header .name h1 {
+    display: block;
+    text-align: center;
+    border: unset;
+    margin-top: 10px;
+  }
+}
+
+/* Lista sfondi */
+.scheda-pg .pg-header[title="Terre Selvagge"] { background-image: url(https://i.imgur.com/ZjQtZ8U.jpg) }
+.scheda-pg .pg-header[title="Dorne"] { background-image: url(https://i.imgur.com/7axV92h.jpg) }
+.scheda-pg .pg-header[title="Nord"] { background-image: url(https://i.imgur.com/eGhwaoA.jpg) }
+.scheda-pg .pg-header[title="Terre della Corona"] { background-image: url(https://i.imgur.com/FGHGbtu.jpg) }
+.scheda-pg .pg-header[title="Altopiano"] { background-image: url(https://i.imgur.com/lAUZJjO.jpg) }
+.scheda-pg .pg-header[title="Città Libere"] { background-image: url(https://i.imgur.com/W9I0jTu.jpg) }
+.scheda-pg .pg-header[title="Baia degli Schiavisti"] { background-image: url(https://i.imgur.com/tI4rKq9.jpg) }
+.scheda-pg .pg-header[title="Valle di Arryn"] { background-image: url(https://i.imgur.com/q8YfWXm.jpg) }
+.scheda-pg .pg-header[title="Terre dei Fiumi"] { background-image: url(https://i.imgur.com/v2oThuu.jpg) }
+.scheda-pg .pg-header[title="Isole di Ferro"] { background-image: url(https://i.imgur.com/InEo3QG.jpg) }
+.scheda-pg .pg-header[title="Terre della Tempesta"] { background-image: url(https://i.imgur.com/4hMyJge.jpg) }
+.scheda-pg .pg-header[title="Terre dell'Ovest"] { background-image: url(https://i.imgur.com/5wpqeYk.jpg) }
+.scheda-pg .pg-header[title="Dothraki"] { background-image: url(https://i.imgur.com/bEYkw8V.jpg) }
