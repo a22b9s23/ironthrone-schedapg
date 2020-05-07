@@ -1,0 +1,8 @@
+# Exclude all
+/*
+
+# Include git important files
+!.gitignore
+
+# Include README.md
+!README.md
