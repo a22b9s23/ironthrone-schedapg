@@ -302,7 +302,7 @@ Il modulo di talenti e difetti è quello racchiuso all'interno dell'elemento:
 <div class="module talents no-show" title="Talenti e Difetti">
   <div class="info-container">
     <div class="simple-container no-value"><dt>Talenti</dt><dd>...</dd></dl></div>
-	  <div class="simple-container no-value"><dt>Difetti</dt><dd>...</dd></dl></div>
+    <div class="simple-container no-value"><dt>Difetti</dt><dd>...</dd></dl></div>
   </div>
 </div>
 ```
@@ -434,8 +434,8 @@ modulo è descritto all'interno del codice:
 <div class="module language-skill no-show" data-title="Languages">
   <div class="info-container">
     <dl clas="simple-container"><dt>Linguaggi Conosciuti</dt><dd>
-	     ...
-	  </dd></dl>
+      ...
+    </dd></dl>
   </div>
 </div>
 ```
@@ -625,12 +625,12 @@ L'ultimo modulo è (attualmente) quello biografico, descritto dal codice:
 <div class="module biography" title="Biografia">
   <div class="info-container">
     <dl class="text-area">
-	    <dt>Descrizione Fisica</dt>
-	    <dd>TESTO-DESCRIZIONE-FISICA</dd>
+      <dt>Descrizione Fisica</dt>
+      <dd>TESTO-DESCRIZIONE-FISICA</dd>
     </dl>
     <dl class="text-area">
-	    <dt>Storia e Psicologia</dt>
-	    <dd>TESTO-STORIA-PSICOLOGIA</dd>
+      <dt>Storia e Psicologia</dt>
+      <dd>TESTO-STORIA-PSICOLOGIA</dd>
     </dl>
   </div>
 </div>
