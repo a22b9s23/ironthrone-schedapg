@@ -147,7 +147,7 @@ class="modifier-lsit">...</div>`, e ogni elemento deve la seguente forma:
 
 ```html
 <div>
-  <div class="name"><a href="URL-CLASSE">NOME-CLASSE</div>
+  <div class="name"><a href="URL-CLASSE">NOME-CLASSE</a></div>
   <div class="value">VALORE</div>
 </div>
 ```
